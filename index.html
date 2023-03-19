@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>COLOR GAME</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid text-center">
+        <h1>COLOR GAME</h1>
+
+        <p>Iguale as cores.</p>
+        <div class="row">
+            <div id="btnColorMy" class="btn" style="background-color:red; width: 50px">sua</div>
+            <div id="btnColorGuess" class="btn" style="background-color:blue; width: 50px">cor</div>
+        </div>
+        <hr>
+        <div class="row">
+            <div id="lblR" class="btn" style=" width: 50px">255</div>
+            <div id="lblG" class="btn" style=" width: 50px">255</div>
+            <div id="lblB" class="btn" style=" width: 50px">255</div>
+        </div>
+        <div class="row">
+            <div class="btn" style="background-color:red; width: 50px" onclick="change('r',10)">+10</div>
+            <div class="btn" style="background-color:green; width: 50px" onclick="change('g',10)">+10</div>
+            <div class="btn" style="background-color:blue; width: 50px" onclick="change('b',10)">+10</div>
+        </div>
+        <div class="row">
+            <div class="btn" style="background-color:red; width: 50px" onclick="change('r',1)">+1</div>
+            <div class="btn" style="background-color:green; width: 50px" onclick="change('g',1)">+1</div>
+            <div class="btn" style="background-color:blue; width: 50px" onclick="change('b',1)">+1</div>
+        </div>
+        <div class="row">
+            <div class="btn" style="background-color:red; width: 50px" onclick="change('r',-1)">-1</div>
+            <div class="btn" style="background-color:green; width: 50px" onclick="change('g',-1)">-1</div>
+            <div class="btn" style="background-color:blue; width: 50px" onclick="change('b',-1)">-1</div>
+        </div>
+        <div class="row">
+            <div class="btn" style="background-color:red; width: 50px" onclick="change('r',-10)">-10</div>
+            <div class="btn" style="background-color:green; width: 50px" onclick="change('g',-10)">-10</div>
+            <div class="btn" style="background-color:blue; width: 50px" onclick="change('b',-10)">-10</div>
+        </div>
+        <div class="row">
+            <div class="btn btn-success" onclick="guess()">COMPARAR</div>
+            <p>v1.0</p>
+        </div>
+    </div>
+    
+</body>
+<script src="game.js"></script>
+</html>
